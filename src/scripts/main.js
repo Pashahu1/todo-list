@@ -8,13 +8,13 @@ const form = document.querySelector('.todo-app__form');
 // form.addEventListener('submit', (event) => {
 //  event.preventDefault();
 
-  // const item = document.createElement('li');
+//   const item = document.createElement('li');
 
-  // item.textContent = form.elements.todo.value;
+//   item.textContent = form.elements.todo.value;
 
-  // item.addEventListener('dblclick', () => {
-  //   item.remove();
-  // });
+//   item.addEventListener('dblclick', () => {
+//     item.remove();
+//   });
 
   // list.prepend(item);
   // list.insertAdjacentHTML('beforeend', `
@@ -24,7 +24,7 @@ const form = document.querySelector('.todo-app__form');
   //   </li>
   // `)
 
-//   form.reset();
+//  form.reset();
 // })
 
 // submit - подія відправки данних форми
@@ -76,16 +76,15 @@ const form = document.querySelector('.todo-app__form');
 //   form.reset();
 // });
 
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-
+  
   list.insertAdjacentHTML('beforeend', `
-    <li>
-      ${form.elements.todo.value};
-      <button class="button__closer" onclick = 'this.parentElement.remove()'>X</button> 
+    <li class="todo-app-item">
+      ${form.elements.todo.value}
+      <button class="button__closer button" onclick = 'this.parentElement.remove()'>X</button> 
     </li>
   `)
-  
+
   form.reset();
 })
