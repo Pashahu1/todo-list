@@ -1,0 +1,42 @@
+@import "./reset/reset.css";
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.todo-app__form {
+  margin-bottom: 20px;
+}
+.todo-app__list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 220px;
+}
+.todo-app-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.todo-app-item:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  cursor: pointer;
+  width: 60px;
+  background-color: #252525;
+  color: white;
+  border: 1px solid #252525;
+  padding: 5px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #fff;
+  color: #252525;
+}
+
+/*# sourceMappingURL=style.css.map */
